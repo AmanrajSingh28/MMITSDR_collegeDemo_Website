@@ -1,0 +1,265 @@
+<html>
+<head>
+<title>MMIT SIDDHARTHNAGAR Govt Polytechnic College</title>
+<link href="bte.jpg" rel="icon"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/font-awesome.min.css" rel="stylesheet"/>
+<link href="css/hover-min.css" rel="stylesheet"/>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+    <style>
+
+.c1
+{position:fixed;z-index:100;width:100%;top:0}
+body{
+    overflow-x: hidden;
+}
+</style>
+<script>
+$(document).ready(function(){
+$(window).scroll(function(){
+if($(this).scrollTop()>45)
+{
+$('#h').addClass("c1");
+}
+else
+{
+$('#h').removeClass("c1");
+}
+});
+});
+</script>
+</head>
+    <body style="background-color: white;">
+    <div class="container-fluid" style="padding: 0%;">
+        
+      <div class="rows" style="background: linen;min-height: 90px;">
+      <div class="col-sm-2" style="background:  navy;min-height: 90px;"><img src="bte.jpg" class="img img-responsive" style="height:90px;border-radius: 100% 100%;"/></div>
+      <div class="col-sm-10" style="background: navy;min-height: 90px;"><span style="color: white;font-size: 28px;">MAHA MAYA POLYTECHNIC OF INFORMATION TECHNOLOGY SIDDHARTHNAGAR</span><br><span style="color:white;">Affiliated to (BTE) Uttar pradesh and Approved by (AICTE) New Delhi</span></div>
+    <!--END of header code-->
+    <!--Code for Menu--> 
+    <div id="h">
+    <div class="col-sm-12" style="padding: 0px;">
+    <nav class="navbar navbar-inverse" style="border:none;border-radius:0px;">
+  <div class="container-fluid" style="background-color:navy;">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="mmitsdr.html" style="color:white;">MMIT-SDR</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="mmitsdr.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="course.html">Course</a></li> 
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="facality.html">Faculty</a></li>
+        <li><a href="antiragging.html">Anti-Ragging</a></li>
+        <li><a href="contact.html">Contact</a></li>
+          <li><a href="placement.html">Placement Cell</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</div>
+         
+      </div>
+      </div>  	 
+    <!-- END code for Menu-->
+        <!-- code for contact us -->
+        <div class=row style="background-color: white;min-height: 400px;margin-top: 5%;">
+        <!--<form action="regnew" method="post" enctype="multipart/form-data">
+     <div class="container-fluid">
+        
+         <div class="row">
+             <div class="col-sm-12" style="background-image:url('stu.jpg');min-height:400px;">
+                 
+                <div class="col-sm-6 ">
+                 <div class="col-sm-12" style="color:black;font-size:50px;
+                       margin-top:9px;align:left;min-height:653px;">
+                      <div class="col-sm-12" style="border:2px solid;text-align:justify;min-height:600px;
+                           margin-top:5%; " >
+                 <div class="col-sm-6" style="color:black;font-size:25px;margin-top:10px;
+                      min-height:400px;  ">
+                       <h1 style="text-align:center;font-family:cooper;color: blue; "><b>Register Here</b></h1>
+                         Name <input type="text" name="txtname" class="form-control"/>
+                            Branch <Select name="branch" class="form-control">
+                            <option>--Select State--</option>
+                            <option>Electrical Engg</option>
+                              <option>Electrical Engg(L.E)</option>
+                                <option>Computer Science and Engg</option>
+                                <option>Computer Science and Engg(L.E)</option>
+                                <option>Food Technology</option>
+                                <option>Food Technology(L.E)</option>
+                            </select>
+                            Gender <Select name="gender" class="form-control">
+                            <option>--Select State--</option>
+                            <option>Male</option>
+                              <option>Female</option>
+                            </select>
+                           Father Name <input type="text" name="Fname" class="form-control"/>
+                            Email Address <input type="email" name="txtemail" class="form-control"/>
+                            Password <input type="password" name="txtpass" class="form-control"/>
+                            Captcha Code <span style="font-size:30px;"><%=code%></span>
+                            <input type="hidden" name="txtccode"value="<%=code%>"/>
+                            <br/><br/><br/>
+                             <input type="submit" value="Reset" class="btn btn-danger" 
+                                 style="min-height:20px;font-size:20px;text-align:left;min-height:40px;width:100%;
+                                 text-align:center; ">
+                            
+                            </div>
+                     <div class="col-sm-6 d" style="color:black;font-size:25px;margin-top:80px;
+                          min-height:500px; text-align:left; ">
+                         Aadhar Number <input type="number" name="txtaadhar" class="form-control"/>
+                          Catagory <Select name="catagory" class="form-control">
+                            <option>--Select State--</option>
+                            <option>General</option>
+                              <option>OBC</option>
+                            <option>SC</option>
+                              <option>ST</option>
+                            </select>
+                         Mobile Number <input type="number" name="txtmob" class="form-control"/>
+                         Address <input type="email" name="txtaddress" class="form-control"/>
+                         Profile Picture
+                         <input type="file" name="fufile" class="form-control"/>
+                         Confirm Password<input type="password" name="txtcpasswd" class="form-control"/>
+                         Enter Captcha code <input type="text" name="txtcaptcha" class="form-control"/>
+                         <br/><br/>
+                      <input type="submit" value="Register Hurry Up!" class="btn btn-success" 
+                                 style="min-height:20px;font-size:20px;text-align:center;width:100%;margin-top:
+                                 5px;">
+                     
+                                </div>
+                      </div>
+                     </div>
+                 </div>
+                 <div class="col-sm-3" style='border:2px solid;min-height:600px;margin-top:3%;width:600px;
+                      margin-left:2%; '>
+                   
+                     
+                   <span style="text-align:center;font-size:50px;font-family:cooper;color:blue;
+                         margin-left:20%; ">  
+                       Objective:-</span><br/>
+  <span style='font-size:21px;color:white;font-family:Monotype Corsiva; '>
+                   	* Automates  activities of MMIT-SDR. <br/>
+	* The purpose is to design a system using which one can perform all operations related to 
+college curriculum.<br/>
+	* In the present system a student has to approach various activities to find details of him/her 
+and college.<br/>
+
+	 * It is tedious for students to plan a particular journey and have it executed properly. <br/>
+	* The proposed system is a web based application and maintains a centralized repository of all 
+related information. <br/>
+	* The system allows one to easily access the relevant information. <br/>
+* From Excellence to Eminence.To evolve into an academy of excellence to serve the emerging knowledge-based society. <br/>
+      * To prepare competent engineers, imbibed with spirit of professionalism and responsible citizenship in a competitive global environment. <br/>
+      * We encourage students to develop community life and inculcate a spirit of tolerance. <br/>
+      * Students get information about different roles in IT industry for making successful career.<br/>
+      *  This is one of the central support services of our Institute. <br/>
+<br/>
+
+                                        
+                  </marquee>
+                     
+                     </span>
+                  
+                 </div>
+                </div>
+                 </div></div>
+    
+         
+               </form>-->
+            <div class="container">
+          <div class="col-sm-12">
+          <div class="col-sm-3" style="margin-top: 3%;">
+          <h1 style="font-family: 'Times New Roman';">CONTACT</h1>
+              <h3 style="font-family: monospace;">Call Us</h3><p>India:+91-70547-03130</p>
+              <h3 style="font-family: monospace;">Email</h3><p>mmitsdr@gmail.com</p>
+              <h3 style="font-family: monospace;">Location</h3><p style="text-align: justify;">Maha Maya Ploytechnic of Information Technology
+              Raniganj, Bansi, Siddharth Nagar, Uttar Pradesh-272153</p>
+          </div>
+              <div class="col-sm-9">        <!--code for query-->
+        <div class="container img img-responsive" style="background-image: url(sdr.jpg);min-height: 300px;width:100%;margin-top: 20px;">
+            <div class="col-sm-12" >
+             <div class="col-sm-3"></div>
+                <div class="col-sm-6 panel panel-body" style="background-color:lightgray;background:rgba(0,0,128,0.7);margin-top: 2%;"><h4 style="color:red;">Query: MAHAMAYA POLYTECHNIC OF INFORMATION TECHNOLOGY</h4><label style="color: white;">Name</label><input type="text" class="form-control" placeholder="Enter first name"/><label style="color: white;">Email</label><input type="text" class="form-control" placeholder="Enter email"/><label style="color: white;">Mobile</label><input type="text" class="form-control" placeholder="Enter mobile number"/>  
+                    <label style="color: white;">Message</label><textarea class="form-control" placeholder="Message here"></textarea><br>
+                    <input type="button" value="Submit" class="btn btn-success"/>
+             </div>
+             <div class="col-sm-3"></div>
+            </div>
+        </div>
+        <!--end code for query--></div>
+          <!--<div class="col-sm-6 panel panel-body"  style="min-height:100px;padding-top:4%;  background: teal;margin-top:4%;width:400px;border-radius:1px;margin-left: 6%;background-color:cadetblue; ">
+              
+              <form action="regnew" method="post" enctype="multipart/form-data">
+                           <input type="name" name="txtname" placeholder="Name" required  class="form-control"/>
+                            <br/>
+                           <input type="email" name="txtemail" placeholder="Email" required  class="form-control"/>
+                            <br/>
+                            <input type="mobno" name="txtmob" placeholder="Mobile Number" class="form-control" />
+                            <br/>
+                           <textarea class="form-control" placeholder="Message"></textarea>
+                           <br/>
+                           <input type="submit" value="Login" class="btn btn btn-primary"/>
+                             </form>
+              </div>-->  
+          </div>
+                      </div>
+            <div><iframe src="https://www.google.com/maps/place/M+M+I+T+SIDDHARTHNAGAR/@27.1953464,82.9313999,349m/data=!3m1!1e3!4m5!3m4!1s0x0:0x7c0ac45bf91a14eb!8m2!3d27.1954681!4d82.9314911" frameborder="0" style="border:0"  height="500px" width="100%" allowfullscreen></iframe></div>
+        </div>
+        <!-- end code for contact us -->
+        
+                <!--code for footer-->
+         <div class="row" style="min-height:100px; background:black; color:white;">
+            <div class="col-sm-3" style="color:white; text-align:center;">
+                <h3><b>Quick Links</b></h3>
+                <h5><a href="about.html" style="text-decoration:none; color:white;">AboutUs</a></h5>
+                <h5><a href="contact.html" style="text-decoration:none; color:white;">Contact</a></h5>
+                <h5><a href="gallery.html" style="text-decoration:none; color:white;">Gallery</a></h5>
+                <h5><a href="course.html" style="text-decoration:none; color:white;">Course</a></h5>
+                 <h5><a href="http://bteup.ac.in/" target="_blank">UPBTE</a></h5>
+                <h5><a href="http://aktu.ac.in/" target="_blank">AKTU</a></h5>
+            </div>
+
+            <div class="col-sm-3">
+        <!--<a href="#"><button class="btn btn-success" style="margin-top:10%; margin-left:40%;">Admin Login</button></a><br />-->
+                <span class="fa fa-facebook-square" style="font-size:35px; margin-left:25%; margin-top:10%;"></span>
+                <span class="fa fa-twitter" style="font-size:35px; margin-left:2%; margin-top:10%;"></span>
+                <span class="fa fa-envelope" style="font-size:35px; margin-left:2%; margin-top:10%;"></span>
+                <span class="fa fa-instagram" style="font-size:35px; margin-left:2%; margin-top:10%;"></span>
+                <span class="fa fa-google" style="font-size:35px; margin-left:2%; margin-top:10%;"></span>
+            </div>
+             
+              <div class="col-sm-3" style="text-align: center;">
+                                       <h3 class="nav-title" style="color: white"><b>CONTACT US</b></h3>
+                                        <h5 class="nav-item">Principal:Madan Mishra</h5>
+                                        <h5 class="nav-item">MMIT Siddharthnagar,Bansi</h5>
+                                        <h5 class="nav-item">District: Siddharthnagar</h5>
+                                        <h5 class="nav-item">State:Uttar Pradesh, Pin-272153</h5>
+                                        <h5 class="nav-item" style="font-size:12px;">principal.mmitsdr@gmail.com</h5>
+                                        <h5 class="nav-item">Mobile: +91-70547-03130</h5>
+             </div>
+             
+            <div class="col-sm-3">
+                <img src="bte.jpg" class="img img-responsive" style="margin-left: 180px; height:90px;border-radius: 100% 100%;"/>
+                <span style="font-size:30px; width:100%; text-align:center;"></span><h3 style="text-align:center;">MMIT SIDDHARTHNAGAR</h3>
+            </div>
+           <div class="col-sm-12"> <hr/> <p style="color:white;text-align:center;">Developed & Degined by Amanraj Singh</p> </div>
+            <div class="col-sm-12">  <hr/> <p style="color:white;text-align:center;">Copyright &copy; 2019 all rights reserved, powered by mmit-sdr</p> </div>
+        </div>
+        <!--end code for footer-->
+        
+        
+        </div>
+    </body>
+</html>
